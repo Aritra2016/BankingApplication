@@ -7,18 +7,17 @@ import lombok.*;
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @ToString
 public class Customer extends BaseEntity {  // Extend to get meta data
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="customer_id")
     private Long customerId;
 
-    @Column(name="account_number")
-    @Id
-    private Long accountNumber;
+    private String name;
 
-    @Column(name="account_type")
-    private String accountType;
+    private String email;
 
-    @Column(name="branch_address")
-    private String branchAddress;
+    @Column(name="mobile_number")
+    private String mobileNumber;
 
 
 
