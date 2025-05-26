@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(path="/api", produces= MediaType.APPLICATION_JSON_VALUE) //It means it supports ResponseType of JSON
 @AllArgsConstructor
-
 public class AccountController {
 
     private IAccountService iAccountService;
